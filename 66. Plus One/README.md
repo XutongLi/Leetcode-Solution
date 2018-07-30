@@ -1,6 +1,6 @@
 ### 66.Plus One
 
-**topic**: Array
+**topic**: Array, Math
 
 ***
 

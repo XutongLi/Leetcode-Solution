@@ -1,6 +1,6 @@
 ### 167. Two Sum II - Input array is sorted
 
-**topic**: Array
+**topic**: Array, Two Pointers, Binary Search
 
 ***
 

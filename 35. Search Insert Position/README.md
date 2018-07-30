@@ -1,6 +1,6 @@
 ### 35. Search Insert Position
 
-**topic**: Array
+**topic**: Array, Binary Search
 
 ***
 
