@@ -1,4 +1,4 @@
-### Leetcode Solution
+## Leetcode Solution
 
 ***
 

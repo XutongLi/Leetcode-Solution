@@ -1,5 +1,7 @@
 ### 35. Search Insert Position
 
+**Difficulty**: Easy
+
 **topic**: Array, Binary Search
 
 ***

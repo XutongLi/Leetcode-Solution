@@ -1,5 +1,7 @@
 ### 283.Move Zeros
 
+**Difficulty**: Easy
+
 **topic**: Array, Two Pointers
 
 ***

@@ -1,5 +1,7 @@
 ### 66.Plus One
 
+**Difficulty**: Easy
+
 **topic**: Array, Math
 
 ***

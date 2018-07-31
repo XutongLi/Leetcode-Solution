@@ -1,5 +1,7 @@
 ### 88.Merge Sorted Array
 
+**Difficulty**: Easy
+
 **topic**: Array, Two Pointers
 
 ***
