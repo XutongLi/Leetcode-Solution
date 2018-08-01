@@ -4,6 +4,8 @@
 
 **topic**: Array, Math
 
+https://leetcode.com/problems/plus-one/description/
+
 ***
 
 Given a **non-empty** array of digits representing a non-negative integer, plus one to the integer.

@@ -4,6 +4,8 @@
 
 **topic**: Array
 
+https://leetcode.com/problems/toeplitz-matrix/description/
+
 ***
 
 A matrix is *Toeplitz* if every diagonal from top-left to bottom-right has the same element.
