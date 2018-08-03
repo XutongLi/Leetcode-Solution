@@ -1,5 +1,5 @@
 //95.82%
-//o(nlogn)
+//o(nlogn)	o(1)
 /**
  * Definition for singly-linked list.
  * public class ListNode {
