@@ -1,3 +1,5 @@
+//recursive
+//100%
 class Solution {
     int i = 0;
     public int scoreOfParentheses(String S) {
