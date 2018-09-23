@@ -1,5 +1,7 @@
 ### 100.Same Tree 
 
+**Difficulty** : Easy
+
 **topic**: Tree, Depth First Search
 
 https://leetcode.com/problems/same-tree/description/
