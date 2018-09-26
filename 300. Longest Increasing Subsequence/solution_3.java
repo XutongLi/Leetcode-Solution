@@ -1,4 +1,4 @@
-//Bianry Search
+//Binary Search
 //O(nlogn)
 /**
  * 10 9 2 5 3 7 6 10 15 18 101 18
