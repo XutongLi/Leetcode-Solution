@@ -1,2 +1,3 @@
 169
 414. Third Maximum Number
+746. Min Cost Climbing Stairs
