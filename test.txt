@@ -12,3 +12,4 @@
 300. Longest Increasing Subsequence
 309. Best Time to Buy and Sell Stock with Cooldown
 650. 2 Keys Keyboard
+413. Arithmetic Slices
