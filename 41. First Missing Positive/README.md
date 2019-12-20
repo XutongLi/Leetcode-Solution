@@ -1,6 +1,6 @@
 ### 41. First Missing Positive
 
-**Difficulty**: MHard
+**Difficulty**: Hard
 
 **topic**: Array
 
