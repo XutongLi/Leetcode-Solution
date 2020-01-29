@@ -3,11 +3,10 @@ private:
     typedef vector<unordered_set<int>> Graph;
     //return true if cycle exists
     bool DFS(int i, const Graph &graph, unordered_set<int> &visited, vector<bool> &flag) {
-        if (flag[i])    return false;
         flag[i] = true;
         visited.insert(i);
         for (auto nei : graph[i]) {
-            if (visited.find(nei) != visited.end() || DFS(nei, graph, visited, flag))
+            if (visited.find(nei) != visited.end() || !flag[nei] && DFS(nei, graph, visited, flag))
                 return true;
         }
         visited.erase(i);
