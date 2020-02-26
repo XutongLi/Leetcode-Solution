@@ -8,7 +8,7 @@ public:
         int mini = *min_element(nums.begin(), nums.end());
         int bucketNum = n - 1, bucketSize = ceil(static_cast<double>(maxi - mini) / bucketNum);
         vector<pair<int, int>> bucket(bucketNum, {INT_MAX, 0}); //<min, max> in every bucket
-        for (auto n : nums) {
+        for (auto n : nums) {   //put n-2 nums
             if (n == mini || n == maxi)
                 continue;
             int idx = (n - mini) / bucketSize;
