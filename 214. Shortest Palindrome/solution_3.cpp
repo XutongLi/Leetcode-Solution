@@ -22,4 +22,4 @@ public:
 //abacd#dcaba     
 //00100000123 (next[])
 //dc(v.sub(0,n - next[n_new-1])) + s
-//awosome solution
+//awesome solution
