@@ -11,3 +11,9 @@
 
 [233. Number of Digit One](<https://github.com/XutongLi/Leetcode-Solution/tree/master/233.%20Number%20of%20Digit%20One>)
 
+***
+
+## 3. Divide and Conquer
+
+[241. Different Ways to Add Parentheses](<https://github.com/XutongLi/Leetcode-Solution/tree/master/241.%20Different%20Ways%20to%20Add%20Parentheses>)
+
