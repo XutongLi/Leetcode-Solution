@@ -35,3 +35,16 @@
 [137. Single Number II]() （数组中一个数字出现一次，其余数字出现三次）
 
 [260. Single Number III]() （数组中两个数字出现一次，其余数字出现两次）
+
+***
+
+## 6. Segment Tree
+
+[307. Range Sum Query - Mutable]() （array局部更新及求和）
+
+***
+
+## 7. Greedy
+
+[316. Remove Duplicate Letters]()
+
