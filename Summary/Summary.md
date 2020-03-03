@@ -40,11 +40,16 @@
 
 ## 6. Segment Tree
 
-[307. Range Sum Query - Mutable]() （array局部更新及求和）
+[307. Range Sum Query - Mutable](<https://github.com/XutongLi/Leetcode-Solution/tree/master/307.%20Range%20Sum%20Query%20-%20Mutable>) （array局部更新及求和）
 
 ***
 
 ## 7. Greedy
 
-[316. Remove Duplicate Letters]()
+[316. Remove Duplicate Letters](<https://github.com/XutongLi/Leetcode-Solution/tree/master/316.%20Remove%20Duplicate%20Letters>)
 
+***
+
+## 8. Binary Indexed Tree
+
+[307. Range Sum Query - Mutable](<https://github.com/XutongLi/Leetcode-Solution/tree/master/307.%20Range%20Sum%20Query%20-%20Mutable>) （array局部更新及求和）
