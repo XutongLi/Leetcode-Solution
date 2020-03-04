@@ -23,18 +23,18 @@
 
 - use Position as hash
 
-[205. Isomorphic Strings]()
-[290. Word Pattern]()
+[205. Isomorphic Strings](<https://github.com/XutongLi/Leetcode-Solution/tree/master/205.%20Isomorphic%20Strings>)
+[290. Word Pattern](<https://github.com/XutongLi/Leetcode-Solution/tree/master/290.%20Word%20Pattern>)
 
 ***
 
 ## 5. Bit Manipulation
 
-[136. Single Number]() （数组中一个数字出现一次，其余数字两次）
+[136. Single Number](<https://github.com/XutongLi/Leetcode-Solution/tree/master/136.%20Single%20Number>) （数组中一个数字出现一次，其余数字两次）
 
-[137. Single Number II]() （数组中一个数字出现一次，其余数字出现三次）
+[137. Single Number II](<https://github.com/XutongLi/Leetcode-Solution/tree/master/137.%20Single%20Number%20II>) （数组中一个数字出现一次，其余数字出现三次）
 
-[260. Single Number III]() （数组中两个数字出现一次，其余数字出现两次）
+[260. Single Number III](<https://github.com/XutongLi/Leetcode-Solution/tree/master/260.%20Single%20Number%20III>) （数组中两个数字出现一次，其余数字出现两次）
 
 ***
 
@@ -53,3 +53,11 @@
 ## 8. Binary Indexed Tree
 
 [307. Range Sum Query - Mutable](<https://github.com/XutongLi/Leetcode-Solution/tree/master/307.%20Range%20Sum%20Query%20-%20Mutable>) （array局部更新及求和）
+
+***
+
+## 9. DFS without Tree
+
+[282. Expression Add Operators](<https://github.com/XutongLi/Leetcode-Solution/tree/master/282.%20Expression%20Add%20Operators>) （string划分为数字，添加+=*使计算结果等于某值）
+
+[306. Additive Number](<https://github.com/XutongLi/Leetcode-Solution/tree/master/306.%20Additive%20Number>) （string划分为数字，某位数字为前两位数字之和）
