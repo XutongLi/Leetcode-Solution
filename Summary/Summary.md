@@ -61,3 +61,12 @@
 [282. Expression Add Operators](<https://github.com/XutongLi/Leetcode-Solution/tree/master/282.%20Expression%20Add%20Operators>) （string划分为数字，添加+=*使计算结果等于某值）
 
 [306. Additive Number](<https://github.com/XutongLi/Leetcode-Solution/tree/master/306.%20Additive%20Number>) （string划分为数字，某位数字为前两位数字之和）
+
+***
+
+## 10. Math Problem using Binary Search
+
+[69. Sqrt(x)]()
+
+[367. Valid Perfect Square]()
+
