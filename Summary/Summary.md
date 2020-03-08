@@ -11,7 +11,7 @@
 
 [233. Number of Digit One](<https://github.com/XutongLi/Leetcode-Solution/tree/master/233.%20Number%20of%20Digit%20One>) （1-n范围内数字各位中1的个数）
 
-[405. Convert a Number to Hexadecimal]() （十进制转化为十六进制，有符号数，考虑负数）
+[405. Convert a Number to Hexadecimal](<https://github.com/XutongLi/Leetcode-Solution/tree/master/405.%20Convert%20a%20Number%20to%20Hexadecimal>) （十进制转化为十六进制，有符号数，考虑负数）
 
 ***
 
@@ -74,7 +74,7 @@
 
 ### 9.2 DFS with Memoization
 
-[691. Stickers to Spell Word]()
+[691. Stickers to Spell Word](<https://github.com/XutongLi/Leetcode-Solution/tree/master/691.%20Stickers%20to%20Spell%20Word>)
 
 ***
 
