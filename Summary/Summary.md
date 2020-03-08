@@ -38,11 +38,15 @@
 
 [260. Single Number III](<https://github.com/XutongLi/Leetcode-Solution/tree/master/260.%20Single%20Number%20III>) （数组中两个数字出现一次，其余数字出现两次）
 
+[318. Maximum Product of Word Lengths]() （不含公共字符的字符串长度最大积）
+
 ***
 
 ## 6. Segment Tree
 
 [307. Range Sum Query - Mutable](<https://github.com/XutongLi/Leetcode-Solution/tree/master/307.%20Range%20Sum%20Query%20-%20Mutable>) （array局部更新及求和）
+
+[327. Count of Range Sum]() (无序数组中，元素和在某一范围中的子数组的数量)
 
 ***
 
@@ -71,4 +75,14 @@
 [69. Sqrt(x)]()
 
 [367. Valid Perfect Square]()
+
+***
+
+## 11. Sort
+
+### 11.1 Merge Sort
+
+[315. Count of Smaller Numbers After Self]()
+
+[327. Count of Range Sum]() （无序数组中，元素和在某一范围中的子数组的数量）
 
