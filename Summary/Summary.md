@@ -46,7 +46,7 @@
 
 [307. Range Sum Query - Mutable](<https://github.com/XutongLi/Leetcode-Solution/tree/master/307.%20Range%20Sum%20Query%20-%20Mutable>) （array局部更新及求和）
 
-[327. Count of Range Sum]() (无序数组中，元素和在某一范围中的子数组的数量)
+[327. Count of Range Sum](<https://github.com/XutongLi/Leetcode-Solution/tree/master/327.%20Count%20of%20Range%20Sum>) (无序数组中，元素和在某一范围中的子数组的数量)
 
 ***
 
@@ -84,5 +84,5 @@
 
 [315. Count of Smaller Numbers After Self]()
 
-[327. Count of Range Sum]() （无序数组中，元素和在某一范围中的子数组的数量）
+[327. Count of Range Sum](<https://github.com/XutongLi/Leetcode-Solution/tree/master/327.%20Count%20of%20Range%20Sum>) （无序数组中，元素和在某一范围中的子数组的数量）
 
