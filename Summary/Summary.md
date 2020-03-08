@@ -11,6 +11,8 @@
 
 [233. Number of Digit One](<https://github.com/XutongLi/Leetcode-Solution/tree/master/233.%20Number%20of%20Digit%20One>) （1-n范围内数字各位中1的个数）
 
+[405. Convert a Number to Hexadecimal]() （十进制转化为十六进制，有符号数，考虑负数）
+
 ***
 
 ## 3. Divide and Conquer
@@ -62,11 +64,17 @@
 
 ***
 
-## 9. DFS without Tree
+## 9. DFS 
+
+### 9.1 DFS without Tree
 
 [282. Expression Add Operators](<https://github.com/XutongLi/Leetcode-Solution/tree/master/282.%20Expression%20Add%20Operators>) （string划分为数字，添加+=*使计算结果等于某值）
 
 [306. Additive Number](<https://github.com/XutongLi/Leetcode-Solution/tree/master/306.%20Additive%20Number>) （string划分为数字，某位数字为前两位数字之和）
+
+### 9.2 DFS with Memoization
+
+[691. Stickers to Spell Word]()
 
 ***
 
