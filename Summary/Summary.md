@@ -13,11 +13,13 @@
 
 [405. Convert a Number to Hexadecimal](<https://github.com/XutongLi/Leetcode-Solution/tree/master/405.%20Convert%20a%20Number%20to%20Hexadecimal>) （十进制转化为十六进制，有符号数，考虑负数）
 
+[343. Integer Break]() （某整数加数的最大积）
+
 ***
 
 ## 3. Divide and Conquer
 
-[241. Different Ways to Add Parentheses](<https://github.com/XutongLi/Leetcode-Solution/tree/master/241.%20Different%20Ways%20to%20Add%20Parentheses>)
+[241. Different Ways to Add Parentheses](<https://github.com/XutongLi/Leetcode-Solution/tree/master/241.%20Different%20Ways%20to%20Add%20Parentheses>) 
 
 [321. Create Maximum Number]()
 
@@ -25,10 +27,11 @@
 
 ## 4. Hash Table
 
-- use Position as hash
+[205. Isomorphic Strings](<https://github.com/XutongLi/Leetcode-Solution/tree/master/205.%20Isomorphic%20Strings>) (use Position as hash)
 
-[205. Isomorphic Strings](<https://github.com/XutongLi/Leetcode-Solution/tree/master/205.%20Isomorphic%20Strings>)
-[290. Word Pattern](<https://github.com/XutongLi/Leetcode-Solution/tree/master/290.%20Word%20Pattern>)
+[290. Word Pattern](<https://github.com/XutongLi/Leetcode-Solution/tree/master/290.%20Word%20Pattern>) (use Position as hash)
+
+[336. Palindrome Pairs]() （string序列组成回文）
 
 ***
 
@@ -56,6 +59,8 @@
 
 [316. Remove Duplicate Letters](<https://github.com/XutongLi/Leetcode-Solution/tree/master/316.%20Remove%20Duplicate%20Letters>)
 
+[330. Patching Array]() （向数组中添加数字，使该数组子数组的值分布在[1,n]）
+
 ***
 
 ## 8. Binary Indexed Tree
@@ -74,7 +79,11 @@
 
 ### 9.2 DFS with Memoization
 
-[691. Stickers to Spell Word](<https://github.com/XutongLi/Leetcode-Solution/tree/master/691.%20Stickers%20to%20Spell%20Word>)
+[691. Stickers to Spell Word](<https://github.com/XutongLi/Leetcode-Solution/tree/master/691.%20Stickers%20to%20Spell%20Word>) （拼写单词主要的最少贴纸数）
+
+[329. Longest Increasing Path in a Matrix]() （矩阵中最常递增路径）
+
+[417. Pacific Atlantic Water Flow]() （水可以流向太平洋、大西洋的位置）
 
 ***
 
@@ -93,4 +102,16 @@
 [315. Count of Smaller Numbers After Self]()
 
 [327. Count of Range Sum](<https://github.com/XutongLi/Leetcode-Solution/tree/master/327.%20Count%20of%20Range%20Sum>) （无序数组中，元素和在某一范围中的子数组的数量）
+
+***
+
+## 12. Trie
+
+[336. Palindrome Pairs]() （string序列组成回文）
+
+***
+
+## 13. Palindrome
+
+
 
