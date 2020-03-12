@@ -45,6 +45,8 @@
 
 [318. Maximum Product of Word Lengths](<https://github.com/XutongLi/Leetcode-Solution/tree/master/318.%20Maximum%20Product%20of%20Word%20Lengths>) （不含公共字符的字符串长度最大积）
 
+[401. Binary Watch]() （二进制手表）
+
 ***
 
 ## 6. Segment Tree
@@ -87,7 +89,15 @@
 
 ***
 
-## 10. Math Problem using Binary Search
+## 10. Binary Search
+
+### 10.1 Basic Application
+
+[300. Longest Increasing Subsequence]() （最长递增序列）
+
+[354. Russian Doll Envelopes]() （最长递增序列变形）
+
+### 10.2 Math Problem 
 
 [69. Sqrt(x)]()
 
@@ -113,5 +123,11 @@
 
 ## 13. Palindrome
 
+[336. Palindrome Pairs]() （string序列组成回文）
 
+***
+
+## 14. Heap
+
+[373. Find K Pairs with Smallest Sums]()
 
