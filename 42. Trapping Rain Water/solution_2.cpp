@@ -6,8 +6,8 @@ public:
             return 0;
         int l = 0, r = n - 1, res = 0;
         int lmax = height[0], rmax = height[n - 1];
-        while (l < r) {
-            if (height[l] <= height[r]) {
+        while (l <= r) {
+            if (lmax < rmax) {
                 height[l] >= lmax ? (lmax = height[l]) : res += (lmax - height[l]); 
                 ++ l;
             }
@@ -19,3 +19,4 @@ public:
         return res;
     }
 };
+//two pointer O(n)
