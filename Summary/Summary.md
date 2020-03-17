@@ -87,6 +87,10 @@
 
 [417. Pacific Atlantic Water Flow]() （水可以流向太平洋、大西洋的位置）
 
+### 9.3 Others
+
+[332. Reconstruct Itinerary]() （将机票的from-to对串成一条路径）
+
 ***
 
 ## 10. Binary Search
@@ -136,6 +140,8 @@
 ## 15. Stack
 
 [403. Frog Jump]()
+
+[332. Reconstruct Itinerary]() （将机票的from-to对串成一条路径）
 
 ***
 
