@@ -17,6 +17,10 @@
 
 [335. Self Crossing]() （四个方向延伸，判断是否有交叉）
 
+[357. Count Numbers with Unique Digits]() （[0, 10^n)内不含重复位的数字）
+
+[441. Arranging Coins]() （n个硬币排成台阶状）
+
 ***
 
 ## 3. Divide and Conquer
