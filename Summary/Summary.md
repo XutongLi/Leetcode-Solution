@@ -15,6 +15,8 @@
 
 [343. Integer Break]() （某整数加数的最大积）
 
+[335. Self Crossing]() （四个方向延伸，判断是否有交叉）
+
 ***
 
 ## 3. Divide and Conquer
