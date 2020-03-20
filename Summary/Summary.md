@@ -93,9 +93,13 @@
 
 [417. Pacific Atlantic Water Flow]() （水可以流向太平洋、大西洋的位置）
 
+[410. Split Array Largest Sum]() （将数组分为m个子数组，求各种分法子数组之和最大值的可能最小值）
+
 ### 9.3 Others
 
 [332. Reconstruct Itinerary]() （将机票的from-to对串成一条路径）
+
+[386. Lexicographical Numbers]() （某范围内数字按照字典序排序）
 
 ***
 
@@ -106,6 +110,8 @@
 [300. Longest Increasing Subsequence]() （最长递增序列）
 
 [354. Russian Doll Envelopes]() （最长递增序列变形）
+
+[410. Split Array Largest Sum]() （将数组分为m个子数组，求各种分法子数组之和最大值的可能最小值）
 
 ### 10.2 Math Problem 
 
@@ -162,6 +168,8 @@
 [363. Max Sum of Rectangle No Larger Than K]() （二维数组子数组和不超过k/二维数组最大字数组和）
 
 [403. Frog Jump]()
+
+[410. Split Array Largest Sum]() （将数组分为m个子数组，求各种分法子数组之和最大值的可能最小值）
 
 ***
 
