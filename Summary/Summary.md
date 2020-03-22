@@ -21,6 +21,8 @@
 
 [441. Arranging Coins]() （n个硬币排成台阶状）
 
+[390. Elimination Game]() （双向间隔消除数，求最后剩下的一个数）
+
 ***
 
 ## 3. Divide and Conquer
