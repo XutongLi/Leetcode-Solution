@@ -175,3 +175,12 @@
 
 ***
 
+## 17. Brainteaser
+
+[458. Poor Pigs]() （以猪试毒，求给定时间内可试出毒的最少猪数量）
+
+***
+
+## 18. Graph
+
+[399. Evaluate Division]() （连除法）
