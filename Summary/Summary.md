@@ -71,6 +71,8 @@
 
 [330. Patching Array]() （向数组中添加数字，使该数组子数组的值分布在[1,n]）
 
+[630. Course Schedule III]() （每个科目有时长和截止日期，求可安排科目的最大数量）
+
 ***
 
 ## 8. Binary Indexed Tree
