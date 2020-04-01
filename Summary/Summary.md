@@ -101,6 +101,8 @@
 
 [410. Split Array Largest Sum]() （将数组分为m个子数组，求各种分法子数组之和最大值的可能最小值）
 
+[546. Remove Boxes]() （移除盒子，使连续盒子数量的平方和最大）
+
 ### 9.3 Others
 
 [332. Reconstruct Itinerary]() （将机票的from-to对串成一条路径）
@@ -168,6 +170,8 @@
 ### 16.1 1-D DP
 
 [53. Maximum Subarray]() （最大子数组和）
+
+[518. Coin Change 2]()（硬币和组成给定数字，每个硬币使用次数不限）
 
 ### 16.2 2-D DP
 
