@@ -183,6 +183,8 @@
 
 [410. Split Array Largest Sum]() （将数组分为m个子数组，求各种分法子数组之和最大值的可能最小值）
 
+[486. Predict the Winner]() （minmax问题，两个人从边上取数，判断谁取得分数高）
+
 ***
 
 ## 17. Brainteaser
