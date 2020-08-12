@@ -3,24 +3,23 @@
  * struct ListNode {
  *     int val;
  *     ListNode *next;
- *     ListNode(int x) : val(x), next(NULL) {}
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
 class Solution {
 public:
-    ListNode* removeElements(ListNode* head, int val) {
-        if (head == NULL)
-            return NULL;
-        ListNode fake(INT_MIN);
-        fake.next = head;
-        ListNode* p = & fake;
-        while (p->next != NULL) {
-            if (p->next->val == val) {
-                p->next = p->next->next;
-            }
-            else
-                p = p->next;
+    ListNode* reverseList(ListNode* head) {
+        if (!head || !head->next)
+            return head;
+        ListNode *fast = head, *slow = nullptr;
+        while (fast) {
+            ListNode *pre = fast->next;
+            fast->next = slow;
+            slow = fast;
+            fast = pre;
         }
-        return fake.next;
+        return slow;
     }
 };
