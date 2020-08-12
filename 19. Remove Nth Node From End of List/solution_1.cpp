@@ -9,19 +9,17 @@
 class Solution {
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {
-        if (head == nullptr)    return nullptr;
-        ListNode *fast = head;
-        while (n -- > 0) {
+        ListNode *fake = new ListNode(-1);
+        fake->next = head;
+        ListNode *fast = fake;
+        ListNode *slow = fake;
+        while (n --) 
             fast = fast->next;
-        }
-        if (fast == nullptr)
-            return head->next;
-        ListNode *slow = head;
-        while (fast->next != nullptr) {
+        while (fast->next) {
             fast = fast->next;
             slow = slow->next;
         }
         slow->next = slow->next->next;
-        return head;
+        return fake->next;
     }
 };
