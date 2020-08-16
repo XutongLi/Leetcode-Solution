@@ -20,7 +20,7 @@ public:
         if (matrix.empty())
             return 0;
         int m = matrix.size(), n = matrix[0].size();
-        vector<vector<int>> mem(m, vector<int>(n, 0));  //mem为到m[i][j]结束的递增字串最大长度，未被访问时为0
+        vector<vector<int>> mem(m, vector<int>(n, 0));  //mem[i][j]为从matrix[i][j]开始的最大长度
         int maxi = 0;
         for (int i = 0; i < m; ++ i) {
             for (int j = 0; j < n; ++ j) {
