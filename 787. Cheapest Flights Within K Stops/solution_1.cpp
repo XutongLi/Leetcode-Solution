@@ -1,33 +1,32 @@
 class Solution {
-private:
-    const int INF = 1e9;
 public:
     int findCheapestPrice(int n, vector<vector<int>>& flights, int src, int dst, int K) {
-        vector<vector<pair<int, int>>> graph(n);
-        for (auto vec : flights)
-            graph[vec[0]].push_back({vec[1], vec[2]});
+        vector<vector<pair<int, int>>> g(n + 1);
+        for (auto e : flights)
+            g[e[0]].push_back({e[1], e[2]});
         queue<pair<int, int>> q;
         q.push({src, 0});
-        int res = INF;
-        ++ K;
-        while (K --) {
-            int len = q.size();
-            while (len --) {
-                auto front = q.front();
+        int res = INT_MAX;
+        for (int i = 0; i <= K; ++ i) {
+            int n = q.size();
+            while (n --) {
+                auto p = q.front();
+                int from = p.first, cum = p.second;
                 q.pop();
-                int from = front.first, cur = front.second;
-                for (auto p : graph[from]) {
-                    int to = p.first, price = p.second;
-                    if (cur + price > res)
+                for (auto pair : g[from]) {
+                    if (cum + pair.second > res)
                         continue;
-                    q.push({to, cur + price});
-                    if (to == dst)
-                        res = cur + price;
+                    if (pair.first == dst) {
+                        res = min(res, cum + pair.second);
+                    } 
+                    else
+                        q.push({pair.first, cum + pair.second});
                 }
-            }
+            }  
         }
-        return res == INF ? -1 : res;
+        return res == INT_MAX ? -1 : res;
     }
 };
+
 // BFS
 // 此题中效率最高
