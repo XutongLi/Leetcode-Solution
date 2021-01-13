@@ -11,20 +11,18 @@
  */
 class Solution {
 private:
-    void inorder(TreeNode *root, TreeNode *&pre) {
-        if (!root)  return;
-        TreeNode *left = root->left, *right = root->right;
-        if (pre) {
-            pre->right = root;
-            pre->left = nullptr;
-        }
-        pre = root;
-        inorder(left, pre);
-        inorder(right, pre);
+    void preorder(TreeNode *root, TreeNode *&pre) {
+       if (!root)   return;
+       TreeNode *left = root->left, *right = root->right;
+       if (pre) pre->right = root;
+       root->left = nullptr;
+       pre = root;
+       preorder(left, pre);
+       preorder(right, pre);
     }
 public:
     void flatten(TreeNode* root) {
         TreeNode *pre = nullptr;
-        inorder(root, pre);
+        preorder(root, pre);
     }
 };
