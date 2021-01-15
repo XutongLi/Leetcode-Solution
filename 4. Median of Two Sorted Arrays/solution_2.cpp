@@ -25,3 +25,5 @@ public:
             return (left + right) / 2.0;
     }
 };
+
+// O(m + n)

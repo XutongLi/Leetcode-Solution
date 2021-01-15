@@ -25,3 +25,5 @@ public:
             return getKth(nums1, s1, e1, nums2, j + 1, e2, k - (j - s2 + 1));
     }
 };
+
+// O(log(m + n))
