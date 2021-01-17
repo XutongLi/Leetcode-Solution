@@ -1,31 +1,39 @@
 class Solution {
-public:
-    int lengthOfLIS(vector<int>& nums) {
-        int len = nums.size();
-        if (len == 0)   return 0;
-        vector<int> dp(len);
-        dp[0] = nums[0];
-        int res = 0;
-        for (int i = 1; i < len; i ++) {
-            if (nums[i] < dp[0])
-                dp[0] = nums[i];
-            else if (nums[i] > dp[res])
-                dp[++res] = nums[i];
+private:
+    int binarySearch(vector<int> &res, int n) {
+        int l = 0, r = res.size() - 1;
+        while (l <= r) {
+            int m = (r - l) / 2 + l;
+            if (res[m] == n)
+                return m;
+            if (res[m] > n)
+                r = m - 1;
             else
-                dp[binarySearch(dp, 0, res, nums[i])] = nums[i];
+                l = m + 1;
         }
-        return res + 1;
+        return l;
     }
-    int binarySearch(vector<int> dp, int lo, int hi, int key) {
-        while (lo <= hi) {
-            int mid = (lo + hi) / 2;
-            if (dp[mid] == key)
-                return mid;
-            else if (dp[mid] > key)
-                hi = mid - 1;
+public:
+    /**
+     * retrun the longest increasing subsequence
+     * @param arr int整型vector the array
+     * @return int整型vector
+     */
+    vector<int> LIS(vector<int>& arr) {
+        vector<int> res;
+        vector<int> mem;    // 记录arr中每个num插入res的位置
+        for (int num : arr) {
+            int pos = binarySearch(res, num);
+            if (pos == res.size())
+                res.push_back(num);
             else
-                lo = mid + 1;
+                res[pos] = num;
+            mem.push_back(pos);
         }
-        return lo;
+        for (int i = arr.size() - 1, j = res.size() - 1; i >= 0; -- i) {
+            if (mem[i] == j)
+                res[j --] = arr[i];
+        }
+        return res;
     }
 };
