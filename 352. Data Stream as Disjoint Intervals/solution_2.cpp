@@ -14,17 +14,19 @@ public:
         auto hi = mp.lower_bound(val);
         auto lo = (hi == mp.begin()) ? mp.end() : prev(hi);
         
-        if (lo != mp.end() && hi != mp.end() && lo->second.second == val - 1 && hi->second.first == val + 1) {
+        if (lo != mp.end() && hi != mp.end() && lo->second.second == val - 1 && hi->second.first == val + 1) {  // [2,2] [4,4] insert 3
             lo->second.second = hi->second.second;
             mp.erase(hi);
         }
-        else if (lo != mp.end() && lo->second.second >= val - 1) 
+        else if (lo != mp.end() && lo->second.second >= val - 1)    
+            // [2,4] [7,7] insert 5 or insert 3
             lo->second.second = max(val, lo->second.second);
         else if (hi != mp.end() && hi->second.first == val + 1) {
+            // [2,4] [7,7] insert 6
             mp[val] = {val, hi->second.second};
             mp.erase(hi);
         }
-        else {
+        else {  // [2,4] [8,8] insert 6
             mp[val] = {val, val};
         }
     }
