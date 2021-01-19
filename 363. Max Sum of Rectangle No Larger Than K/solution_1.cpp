@@ -25,4 +25,5 @@ public:
 };
 //dp + binary search
 //m 远大于 n  time O(n^2*m*logm)  space O(m)
+//sum[j] - sum[i] <= k -> sum[i] >= sum[j] - k where j > i 
 //find the max sum rectangle in 2D array （O(m*n^2）)的变种 （每一列使用53. Maximum Subarray寻找最大连续和）
