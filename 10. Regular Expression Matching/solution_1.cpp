@@ -1,13 +1,16 @@
 class Solution {
+private:
+	bool isMatch(string &s, int st, string &p, int pt) {
+		int ls = s.size() - st, lp = p.size() - pt;
+        if (lp == 0)	return ls == 0;
+        bool firstMatch = (ls > 0) && (s[st] == p[pt] || p[pt] == '.');
+        if (lp >= 2 && p[pt + 1] == '*')
+            return firstMatch && isMatch(s, st + 1, p, pt) || isMatch(s, st, p, pt + 2);
+        else 
+            return firstMatch && isMatch(s, st + 1, p, pt + 1);
+    }
 public:
-    bool isMatch(string s, string p) {
-        if (p.empty())      
-            return s.empty();
-        
-        bool firstMatch = !s.empty() && (s[0] == p[0] || p[0] == '.');
-        if (p.length() >= 2 && p[1] == '*')
-            return isMatch(s, p.substr(2)) || firstMatch && isMatch(s.substr(1), p);
-        else
-            return firstMatch && isMatch(s.substr(1), p.substr(1));
+    bool isMatch(string &s, string &p) {
+        return isMatch(s, 0, p, 0);
     }
 };
