@@ -1,28 +1,26 @@
 class Solution {
 private:
-    void dfs(const vector<int> &arr, int idx, int target, vector<int> &cur, vector<vector<int>> &res) {
-        if (target == 0) {
+    void dfs(vector<int> &candidates, vector<int> &cur, vector<vector<int>> &res, int target, int sum, int idx) {
+        if (sum == target) {
             res.push_back(cur);
             return;
         }
-        for (int i = idx; i < arr.size(); ++ i) {
-            if (arr[i] > target)
+        if (sum > target)   return;
+        for (int i = idx; i < candidates.size(); ++ i) {
+            if (i > idx && candidates[i] == candidates[i - 1])
                 continue;
-            if (i > idx && arr[i] == arr[i - 1])    //消除重复
-                continue;
-            cur.push_back(arr[i]);
-            dfs(arr, i + 1, target - arr[i], cur, res);
+            if (candidates[i] > target) continue;
+            cur.push_back(candidates[i]);
+            dfs(candidates, cur, res, target, sum + candidates[i], i + 1);
             cur.pop_back();
         }
     }
 public:
     vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
         vector<vector<int>> res;
-        if (candidates.empty())
-            return res;
-        sort(candidates.begin(), candidates.end());
         vector<int> cur;
-        dfs(candidates, 0, target, cur, res);
+        sort(candidates.begin(), candidates.end());
+        dfs(candidates, cur, res, target, 0, 0);
         return res;
     }
 };
