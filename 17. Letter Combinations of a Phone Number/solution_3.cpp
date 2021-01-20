@@ -1,4 +1,5 @@
 class Solution {
+private:
     unordered_map<int, string> m;
     void map_insert() {
         m[2] = "abc";
@@ -10,23 +11,25 @@ class Solution {
         m[8] = "tuv";
         m[9] = "wxyz";
     }
+    void dfs(string &digits, vector<string> &res, string &cur, int idx) {
+        if (idx == digits.size()) {
+            res.push_back(cur);
+            return;
+        }
+        for (char c : m[digits[idx] - '0']) {
+            cur += c;
+            dfs(digits, res, cur, idx + 1);
+            cur.pop_back();
+        }
+    }
 public:
     vector<string> letterCombinations(string digits) {
         map_insert();
         vector<string> res;
         if (digits.empty())
             return res;
-        letterCombinations(digits, "", 0, res);
+        string cur = "";
+        dfs(digits, res, cur, 0);
         return res;
-    }
-    void letterCombinations(string digits, string now, int idx, vector<string> &res) {
-        if (idx == digits.length()) {
-            res.push_back(now);
-            return;
-        }
-        string tmp = m[digits[idx] - '0'];
-        for (char tmpc : tmp) {
-            letterCombinations(digits, now + tmpc, idx + 1, res);  
-        }
     }
 };
