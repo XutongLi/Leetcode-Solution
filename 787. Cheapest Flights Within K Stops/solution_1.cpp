@@ -1,32 +1,37 @@
 class Solution {
 public:
-    int findCheapestPrice(int n, vector<vector<int>>& flights, int src, int dst, int K) {
-        vector<vector<pair<int, int>>> g(n + 1);
-        for (auto e : flights)
-            g[e[0]].push_back({e[1], e[2]});
-        queue<pair<int, int>> q;
-        q.push({src, 0});
-        int res = INT_MAX;
-        for (int i = 0; i <= K; ++ i) {
-            int n = q.size();
-            while (n --) {
-                auto p = q.front();
-                int from = p.first, cum = p.second;
-                q.pop();
-                for (auto pair : g[from]) {
-                    if (cum + pair.second > res)
-                        continue;
-                    if (pair.first == dst) {
-                        res = min(res, cum + pair.second);
-                    } 
-                    else
-                        q.push({pair.first, cum + pair.second});
-                }
-            }  
+    int findCheapestPrice(int n, vector<vector<int>>& flights, int src, int dst, int k) {
+        vector<vector<pair<int, int>>> g(n);
+        for (auto f : flights) {
+            g[f[0]].push_back({f[1], f[2]});
         }
-        return res == INT_MAX ? -1 : res;
+        int mini = INT_MAX;
+        queue<pair<int, int>> q;
+        vector<int> minCost(n, INT_MAX);
+        q.push({src, 0});
+        while (!q.empty()) {
+            int size = q.size();
+            while (size --) {
+                int from = q.front().first;
+                int w = q.front().second;
+                q.pop();
+                for (auto p : g[from]) {
+                    int to = p.first;
+                    int wn = w + p.second;
+                    if (wn > mini)  continue;
+                    if (to == dst)
+                        mini = min(mini, wn);
+                    else if (wn < minCost[to]) {
+                        q.push({to, wn});
+                        minCost[to] = wn;
+                    }
+                }
+            }
+            if (k -- == 0)  break;
+        }
+        return mini == INT_MAX ? -1 : mini;
     }
 };
 
 // BFS
-// 此题中效率最高
+// 注意剪枝条件
