@@ -1,25 +1,27 @@
 class Solution {
-public:
-    int findTargetSumWays(vector<int>& nums, int S) {
-        unordered_map<string, int> mp;
-        return helper(nums, S, 0, 0, mp);
-    }
-    int helper(const vector<int> &nums, int S, int idx, int sum, unordered_map<string, int> &mp) {
-        string key = to_string(idx) + "-" + to_string(sum);
-        if (mp.find(key) != mp.end())
-            return mp[key];
-        if (idx == nums.size()) {
-            if (sum == S)
-                return 1;
-            else
-                return 0;
+private:
+    int find(vector<int> &nums, int posi) {
+        vector<int> dp(posi + 1, 0);
+        dp[0] = 1;
+        for (int i = 1; i <= nums.size(); ++ i) {
+            for (int j = posi; j >= nums[i - 1]; -- j)
+                dp[j] = dp[j] + dp[j - nums[i - 1]];
         }
-        int add = helper(nums, S, idx + 1, sum + nums[idx], mp);
-        int minus = helper(nums, S, idx + 1, sum - nums[idx], mp);
-        mp[key] = add + minus;
-        return mp[key];
+        return dp[posi];
+    }
+public:
+    int findTargetSumWays(vector<int>& nums, int target) {
+        int sum = accumulate(nums.begin(), nums.end(), 0);
+        target = abs(target);
+        if (sum < target)   return 0;
+        if ((sum + target) % 2 == 1)    return 0;
+        return find(nums, (sum + target) / 2);
     }
 };
-//DFS with memorization
-//O(nl) n为nums.size，l为S的可能存在范围（此题为1000）
-//将到达某idx的sum值保存，防止计算重叠
+// sum(p)为正数和，sum(n)为负数和
+// sum(p) + sum(n) = target
+// sum(p) - sum(n) = sum
+// 2 * sum(p) = target + sum
+// sum(p) = (target + sum) / 2
+// 转化为求sum(p)有几种组合方式的问题
+// 即0-1背包问题
